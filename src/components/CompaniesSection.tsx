@@ -44,7 +44,7 @@ const CompaniesSection = () => (
         <div className="mb-10 text-center">
           <p className="text-sm font-semibold tracking-widest uppercase text-accent">Experience</p>
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mt-2">
-            Companies I've Worked With
+            Organisations I've Worked With
           </h2>
         </div>
       </AnimatedSection>
