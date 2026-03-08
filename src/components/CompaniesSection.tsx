@@ -36,18 +36,14 @@ const CompaniesSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {companies.map((c) => (
-            <div
+            <img
               key={c.name}
-              className="flex items-center justify-center h-20 md:h-24 px-4 rounded-xl bg-card border border-border shadow-card hover:shadow-card-hover hover:border-accent/30 transition-all duration-300"
-            >
-              <img
-                src={c.logo}
-                alt={c.name}
-                className="max-h-12 md:max-h-14 w-auto object-contain"
-              />
-            </div>
+              src={c.logo}
+              alt={c.name}
+              className="h-10 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+            />
           ))}
         </div>
       </AnimatedSection>
