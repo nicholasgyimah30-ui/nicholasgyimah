@@ -22,8 +22,8 @@ const AboutSection = () => (
         {stats.map((s, i) => (
           <AnimatedSection key={s.label} delay={0.2 + i * 0.1}>
             <div className="p-6 rounded-xl bg-background border border-border shadow-card hover:shadow-card-hover transition-shadow">
-              <span className="text-2xl">{s.icon}</span>
-              <h3 className="mt-3 font-heading font-semibold text-foreground">{s.label}</h3>
+              <div className="h-1 w-8 rounded-full bg-accent mb-4" />
+              <h3 className="font-heading font-semibold text-foreground">{s.label}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{s.text}</p>
             </div>
           </AnimatedSection>

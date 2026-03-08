@@ -23,8 +23,7 @@ const ContactSection = () => (
               rel="noopener noreferrer"
               className="flex flex-col items-center p-5 rounded-xl bg-background border border-border shadow-card hover:shadow-card-hover hover:border-accent/40 transition-all"
             >
-              <span className="text-2xl mb-2">{c.icon}</span>
-              <span className="text-xs font-medium text-muted-foreground">{c.label}</span>
+              <span className="text-xs font-semibold tracking-wider uppercase text-accent mb-1">{c.label}</span>
               <span className="text-sm font-medium text-foreground mt-1 break-all">{c.value}</span>
             </a>
           ))}
