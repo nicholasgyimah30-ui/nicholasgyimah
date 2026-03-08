@@ -91,17 +91,21 @@ const HeroSection = () => {
             className="hidden md:flex justify-center"
           >
             <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-card-hover">
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={imgIndex}
-                  src={heroImages[imgIndex].src}
-                  alt={heroImages[imgIndex].alt}
-                  initial={{ opacity: 0, scale: 1.05 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.8 }}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+              <AnimatePresence>
+                {heroImages.map((img, i) => (
+                  i === imgIndex && (
+                    <motion.img
+                      key={i}
+                      src={img.src}
+                      alt={img.alt}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 1.2, ease: "easeInOut" }}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  )
+                ))}
               </AnimatePresence>
             </div>
           </motion.div>
