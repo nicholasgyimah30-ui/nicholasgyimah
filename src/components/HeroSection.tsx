@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import profileImg from "@/assets/nicholas-gyimah.jpg";
+import speaking1 from "@/assets/speaking-1.jpg";
+import speaking2 from "@/assets/speaking-2.jpg";
+import speaking3 from "@/assets/speaking-3.jpg";
+import speaking4 from "@/assets/speaking-4.jpg";
 
 const roles = [
   "Talent Ecosystem Builder",
@@ -8,14 +12,29 @@ const roles = [
   "Student Opportunity Strategist",
 ];
 
+const heroImages = [
+  { src: profileImg, alt: "Nicholas Gyimah — Portrait" },
+  { src: speaking1, alt: "Nicholas speaking at University of Ghana" },
+  { src: speaking2, alt: "Nicholas facilitating a panel discussion" },
+  { src: speaking3, alt: "Nicholas presenting at UG CEDI Conference Centre" },
+  { src: speaking4, alt: "Nicholas delivering a workshop session" },
+];
+
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
+  const [imgIndex, setImgIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const roleInterval = setInterval(() => {
       setRoleIndex((i) => (i + 1) % roles.length);
     }, 3000);
-    return () => clearInterval(interval);
+    const imgInterval = setInterval(() => {
+      setImgIndex((i) => (i + 1) % heroImages.length);
+    }, 4000);
+    return () => {
+      clearInterval(roleInterval);
+      clearInterval(imgInterval);
+    };
   }, []);
 
   return (
@@ -72,11 +91,18 @@ const HeroSection = () => {
             className="hidden md:flex justify-center"
           >
             <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-card-hover">
-              <img
-                src={profileImg}
-                alt="Nicholas Gyimah"
-                className="w-full h-full object-cover"
-              />
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={imgIndex}
+                  src={heroImages[imgIndex].src}
+                  alt={heroImages[imgIndex].alt}
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.8 }}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </AnimatePresence>
             </div>
           </motion.div>
         </div>
