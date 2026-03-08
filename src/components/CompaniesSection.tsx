@@ -42,7 +42,7 @@ const CompaniesSection = () => (
               key={c.name}
               src={c.logo}
               alt={c.name}
-              className="h-10 md:h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+              className="h-10 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           ))}
         </div>
