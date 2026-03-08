@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 const projects = [
   {
     name: "Intern Africa",
-    role: "Talent Operations Lead (Former Volunteer)",
+    role: "Founder",
     description: "A platform and community connecting African students with internship opportunities and building career readiness across the continent.",
   },
   {
