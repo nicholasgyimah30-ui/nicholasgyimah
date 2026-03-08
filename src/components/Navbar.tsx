@@ -27,8 +27,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a href="#hero" className="font-heading font-bold text-lg text-foreground">
-          N<span className="text-accent">G</span>
+        <a href="#hero" className="flex items-center gap-2">
+          <img src={profileImg} alt="Nicholas Gyimah" className="w-8 h-8 rounded-full object-cover border border-accent" />
+          <span className="font-heading font-bold text-lg text-foreground">N<span className="text-accent">G</span></span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
