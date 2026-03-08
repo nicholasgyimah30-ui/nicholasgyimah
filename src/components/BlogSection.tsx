@@ -26,7 +26,7 @@ const linkedinPosts = [
   {
     src: linkedinPost3,
     alt: "5 Free Job Simulations That Can Replace No Internship Experience",
-    title: "5 Free Job Simulations to Replace "No Internship Experience"",
+    title: '5 Free Job Simulations to Replace "No Internship Experience"',
     url: "https://www.linkedin.com/posts/nicholas-gyimah001_students-internships-careergrowth-activity-7419794363746013184-X91n",
   },
 ];
