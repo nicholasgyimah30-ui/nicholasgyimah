@@ -15,9 +15,11 @@ import logoClimateReality from "@/assets/logo-climate-reality.jpg";
 import logoCrest from "@/assets/logo-crest.jpg";
 import logoUGASS from "@/assets/logo-ugass.jpg";
 import logoHSE from "@/assets/logo-hse.jpg";
+import logoHSBC from "@/assets/logo-hsbc.png";
 
 const companies = [
   { name: "Nestlé", logo: logoNestle },
+  { name: "HSBC", logo: logoHSBC },
   { name: "Second Life", logo: logoSecondLife },
   { name: "InternAfrica", logo: logoInternAfrica },
   { name: "Internshala", logo: logoInternshala },
