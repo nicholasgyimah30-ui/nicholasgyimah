@@ -1,46 +1,26 @@
 import AnimatedSection from "./AnimatedSection";
+import logoNestle from "@/assets/logo-nestle.jpeg";
+import logoSecondLife from "@/assets/logo-secondlife.jpeg";
+import logoInternAfrica from "@/assets/logo-internafrica.jpeg";
+import logoInternshala from "@/assets/logo-internshala.jpeg";
+import logoOQD from "@/assets/logo-oqd.jpeg";
+import logoObraLegal from "@/assets/logo-obralegal.jpeg";
+import logoUMB from "@/assets/logo-umb.jpeg";
+import logoJadaad from "@/assets/logo-jadaad.jpeg";
+import logoBMSR from "@/assets/logo-bmsr.jpeg";
+import logoPaxRomana from "@/assets/logo-paxromana.jpeg";
 
 const companies = [
-  {
-    name: "Nestlé",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Nestl%C3%A9.svg/188px-Nestl%C3%A9.svg.png",
-  },
-  {
-    name: "Second Life",
-    logo: null,
-  },
-  {
-    name: "InternAfrica",
-    logo: null,
-  },
-  {
-    name: "Internshala",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Internshala_logo.svg/200px-Internshala_logo.svg.png",
-  },
-  {
-    name: "Only Quality Data",
-    logo: null,
-  },
-  {
-    name: "OBRA LEGAL LP",
-    logo: null,
-  },
-  {
-    name: "Universal Merchant Bank",
-    logo: "https://upload.wikimedia.org/wikipedia/en/5/59/Universal_Merchant_Bank_logo.png",
-  },
-  {
-    name: "Jadaad Technologies",
-    logo: null,
-  },
-  {
-    name: "Bureau of Market & Social Research",
-    logo: null,
-  },
-  {
-    name: "IMCS Pax Romana",
-    logo: null,
-  },
+  { name: "Nestlé", logo: logoNestle },
+  { name: "Second Life", logo: logoSecondLife },
+  { name: "InternAfrica", logo: logoInternAfrica },
+  { name: "Internshala", logo: logoInternshala },
+  { name: "Only Quality Data", logo: logoOQD },
+  { name: "OBRA LEGAL LP", logo: logoObraLegal },
+  { name: "Universal Merchant Bank", logo: logoUMB },
+  { name: "Jadaad Technologies", logo: logoJadaad },
+  { name: "Bureau of Market & Social Research", logo: logoBMSR },
+  { name: "IMCS Pax Romana", logo: logoPaxRomana },
 ];
 
 const CompaniesSection = () => (
@@ -62,17 +42,11 @@ const CompaniesSection = () => (
               key={c.name}
               className="flex items-center justify-center h-20 md:h-24 px-4 rounded-xl bg-card border border-border shadow-card hover:shadow-card-hover hover:border-accent/30 transition-all duration-300"
             >
-              {c.logo ? (
-                <img
-                  src={c.logo}
-                  alt={c.name}
-                  className="max-h-10 md:max-h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-                />
-              ) : (
-                <span className="font-heading font-bold text-xs md:text-sm text-foreground/70 text-center leading-tight">
-                  {c.name}
-                </span>
-              )}
+              <img
+                src={c.logo}
+                alt={c.name}
+                className="max-h-12 md:max-h-14 w-auto object-contain"
+              />
             </div>
           ))}
         </div>
