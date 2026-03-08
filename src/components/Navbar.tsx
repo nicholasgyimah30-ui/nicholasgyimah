@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import profileImg from "@/assets/nicholas-gyimah.jpg";
 
 const roles = [
   "Talent Ecosystem Builder",
