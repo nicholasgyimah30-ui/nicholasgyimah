@@ -1,5 +1,5 @@
 import AnimatedSection from "./AnimatedSection";
-import SectionHeading from "./SectionHeading";
+import bgImage from "@/assets/speaking-4.jpg";
 
 const testimonials = [
   {
@@ -13,17 +13,24 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section id="testimonials" className="py-20 md:py-28">
-    <div className="container max-w-3xl">
+  <section id="testimonials" className="relative py-20 md:py-28 overflow-hidden">
+    <div className="absolute inset-0">
+      <img src={bgImage} alt="" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-navy-dark/[0.91]" />
+    </div>
+    <div className="container relative z-10 max-w-3xl">
       <AnimatedSection>
-        <SectionHeading title="What People Say" />
+        <div className="mb-12 md:mb-16">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground">What People Say</h2>
+          <div className="mt-4 h-1 w-12 rounded-full bg-accent" />
+        </div>
       </AnimatedSection>
       <div className="space-y-8">
         {testimonials.map((t, i) => (
           <AnimatedSection key={i} delay={0.1 + i * 0.1}>
-            <blockquote className="p-8 rounded-xl bg-card border border-border shadow-card text-center">
-              <p className="text-foreground text-lg leading-relaxed italic">"{t.quote}"</p>
-              <cite className="mt-4 block text-sm text-muted-foreground not-italic">— {t.author}</cite>
+            <blockquote className="p-8 rounded-xl bg-primary-foreground/[0.06] border border-primary-foreground/10 backdrop-blur-sm text-center">
+              <p className="text-primary-foreground/90 text-lg leading-relaxed italic">"{t.quote}"</p>
+              <cite className="mt-4 block text-sm text-gold not-italic">— {t.author}</cite>
             </blockquote>
           </AnimatedSection>
         ))}

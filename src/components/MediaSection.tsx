@@ -1,5 +1,4 @@
 import AnimatedSection from "./AnimatedSection";
-import SectionHeading from "./SectionHeading";
 import flierPodcast from "@/assets/flier-podcast.jpg";
 import flierZedfm from "@/assets/flier-zedfm.jpg";
 import flierNews from "@/assets/flier-apsuhopsa-news.jpg";
@@ -29,15 +28,19 @@ const appearances = [
 ];
 
 const MediaSection = () => (
-  <section id="media" className="py-20 md:py-28 bg-card">
+  <section id="media" className="py-20 md:py-28 bg-background">
     <div className="container">
       <AnimatedSection>
-        <SectionHeading title="Media & Appearances" subtitle="Podcast, radio, and press features." />
+        <div className="mb-12 md:mb-16">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Media & Appearances</h2>
+          <p className="mt-3 text-muted-foreground text-lg max-w-2xl">Podcast, radio, and press features.</p>
+          <div className="mt-4 h-1 w-12 rounded-full bg-accent" />
+        </div>
       </AnimatedSection>
       <div className="grid md:grid-cols-3 gap-6">
         {appearances.map((item, i) => (
           <AnimatedSection key={item.title} delay={0.1 + i * 0.1}>
-            <div className="group rounded-xl overflow-hidden border border-border bg-background shadow-card hover:shadow-card-hover transition-all duration-300">
+            <div className="group rounded-xl overflow-hidden border border-border bg-card shadow-card hover:shadow-card-hover transition-all duration-300">
               <div className="aspect-square overflow-hidden">
                 <img
                   src={item.src}
