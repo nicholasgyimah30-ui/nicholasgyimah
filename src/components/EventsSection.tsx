@@ -7,19 +7,54 @@ import speaking4 from "@/assets/speaking-4.jpg";
 
 const events = [
   {
-    name: "Access in Action Launch Event",
-    type: "Program Launch",
-    description: "Introductory session presenting the Access in Action initiative to students and early-career professionals.",
-  },
-  {
-    name: "Transferable Skills Skill-Up Lab",
+    name: "LinkedIn 101",
     type: "Workshop",
-    description: "A hands-on session helping students identify, articulate, and leverage their transferable skills.",
+    description: "Biochemistry Department — Helping students build professional LinkedIn profiles for career visibility.",
   },
   {
-    name: "Webinar: Navigating the Future of Work in Africa",
-    type: "Panel / Webinar",
-    description: "A panel discussion exploring career readiness and the evolving global labor market for African talent.",
+    name: "Career Development Summit",
+    type: "Summit",
+    description: "Statistics and Actuarial Science Department — A comprehensive career readiness event for students.",
+  },
+  {
+    name: "Personal Branding",
+    type: "Workshop",
+    description: "Accounting Department — Guiding students on building a strong personal brand for career success.",
+  },
+  {
+    name: "Starting It Right",
+    type: "Speaking",
+    description: "Economics Department, CEDI Conference Centre — Keynote on starting your career journey with intention.",
+  },
+  {
+    name: "Career Development",
+    type: "Speaking",
+    description: "UGBS-RS, Amegashie — Career development session for business school students.",
+  },
+  {
+    name: "LinkedIn Essentials with Caleb Shalley",
+    type: "Workshop",
+    description: "A collaborative workshop on leveraging LinkedIn for professional growth and opportunity access.",
+  },
+  {
+    name: "Teens In AI Hackathon — Accra",
+    type: "Hackathon",
+    description: "Supporting young talent at the intersection of AI and innovation in Accra.",
+  },
+  {
+    name: "Grad School 101",
+    type: "Workshop",
+    description: "Helping students navigate the graduate school application process and positioning strategies.",
+  },
+  {
+    name: "First Ghanaian Presenter — UNIV Nigeria",
+    type: "International",
+    description: "First Ghanaian presenter at the event, representing Ghana on an international stage in Nigeria.",
+  },
+  {
+    name: "Best Camp Tutor — HSE Cultural and Art Camp",
+    type: "Recognition",
+    description: "Recognized as the Best Camp Tutor at the HSE Cultural and Art Camp.",
   },
 ];
 
