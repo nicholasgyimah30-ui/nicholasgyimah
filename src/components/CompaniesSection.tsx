@@ -9,6 +9,12 @@ import logoUMB from "@/assets/logo-umb.jpeg";
 import logoJadaad from "@/assets/logo-jadaad.jpeg";
 import logoBMSR from "@/assets/logo-bmsr.jpeg";
 import logoPaxRomana from "@/assets/logo-paxromana.jpeg";
+import logoYoungo from "@/assets/logo-youngo.jpg";
+import logoBlueApp from "@/assets/logo-blue-app.jpg";
+import logoClimateReality from "@/assets/logo-climate-reality.jpg";
+import logoCrest from "@/assets/logo-crest.jpg";
+import logoUGASS from "@/assets/logo-ugass.jpg";
+import logoHSE from "@/assets/logo-hse.jpg";
 
 const companies = [
   { name: "Nestlé", logo: logoNestle },
@@ -21,6 +27,12 @@ const companies = [
   { name: "Jadaad Technologies", logo: logoJadaad },
   { name: "Bureau of Market & Social Research", logo: logoBMSR },
   { name: "IMCS Pax Romana", logo: logoPaxRomana },
+  { name: "YOUNGO UNFCCC", logo: logoYoungo },
+  { name: "Blue App", logo: logoBlueApp },
+  { name: "The Climate Reality Project", logo: logoClimateReality },
+  { name: "University Crest", logo: logoCrest },
+  { name: "UGASS", logo: logoUGASS },
+  { name: "HSE", logo: logoHSE },
 ];
 
 const CompaniesSection = () => (
