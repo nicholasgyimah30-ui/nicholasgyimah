@@ -2,9 +2,9 @@ import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
 
 const contactOptions = [
-  { icon: "📧", label: "Email", value: "nicholasgyimah30@gmail.com", href: "mailto:nicholasgyimah30@gmail.com" },
-  { icon: "💼", label: "LinkedIn", value: "nicholas-gyimah001", href: "https://www.linkedin.com/in/nicholas-gyimah001/" },
-  { icon: "✍️", label: "Newsletter", value: "nicholasgyimah.substack.com", href: "https://nicholasgyimah.substack.com" },
+  { label: "Email", value: "nicholasgyimah30@gmail.com", href: "mailto:nicholasgyimah30@gmail.com" },
+  { label: "LinkedIn", value: "nicholas-gyimah001", href: "https://www.linkedin.com/in/nicholas-gyimah001/" },
+  { label: "Newsletter", value: "nicholasgyimah.substack.com", href: "https://nicholasgyimah.substack.com" },
 ];
 
 const ContactSection = () => (
