@@ -4,6 +4,11 @@ import speaking1 from "@/assets/speaking-1.jpg";
 import speaking2 from "@/assets/speaking-2.jpg";
 import speaking3 from "@/assets/speaking-3.jpg";
 import speaking4 from "@/assets/speaking-4.jpg";
+import flierUgass from "@/assets/flier-ugass.jpg";
+import flierBestAsset from "@/assets/flier-best-asset.jpg";
+import flierFireside from "@/assets/flier-fireside.jpg";
+import flierGamechanger from "@/assets/flier-gamechanger.jpg";
+import flierApsuhopsa from "@/assets/flier-apsuhopsa.jpg";
 
 const events = [
   {
@@ -58,11 +63,19 @@ const events = [
   },
 ];
 
-const photos = [
+const speakingPhotos = [
   { src: speaking1, alt: "Nicholas speaking to students at University of Ghana" },
   { src: speaking2, alt: "Nicholas facilitating a panel discussion" },
   { src: speaking3, alt: "Nicholas presenting at UG CEDI Conference Centre" },
   { src: speaking4, alt: "Nicholas delivering a workshop session" },
+];
+
+const eventFliers = [
+  { src: flierGamechanger, alt: "The Game Changer — International Kingdom Leadership Summit" },
+  { src: flierUgass, alt: "UGASS Career Fair 2024/2025" },
+  { src: flierBestAsset, alt: "Becoming Your Best Asset — UGBS Accounting Students" },
+  { src: flierFireside, alt: "APSU-HOPSA Fireside Chat & Games" },
+  { src: flierApsuhopsa, alt: "APSUHOPSA UG — Faith, Humility & New Leadership" },
 ];
 
 const EventsSection = () => (
@@ -72,10 +85,10 @@ const EventsSection = () => (
         <SectionHeading title="Events & Speaking" />
       </AnimatedSection>
 
-      {/* Speaking Photos Gallery */}
+      {/* Speaking Photos */}
       <AnimatedSection delay={0.1}>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14">
-          {photos.map((photo, i) => (
+          {speakingPhotos.map((photo, i) => (
             <div
               key={i}
               className="aspect-[4/3] rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
@@ -105,6 +118,26 @@ const EventsSection = () => (
           </AnimatedSection>
         ))}
       </div>
+
+      {/* Event Fliers */}
+      <AnimatedSection delay={0.4}>
+        <h3 className="font-heading font-semibold text-lg text-foreground mt-16 mb-6">Featured Event Fliers</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          {eventFliers.map((flier, i) => (
+            <div
+              key={i}
+              className="rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
+            >
+              <img
+                src={flier.src}
+                alt={flier.alt}
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </div>
+      </AnimatedSection>
+
       <AnimatedSection delay={0.5}>
         <a
           href="#contact"
