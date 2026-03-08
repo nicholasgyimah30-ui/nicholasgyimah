@@ -2,9 +2,9 @@ import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
 
 const stats = [
-  { icon: "🎯", label: "Mission", text: "Closing the opportunity gap for African talent" },
-  { icon: "🌍", label: "Focus", text: "Future of Work in Africa" },
-  { icon: "🤝", label: "Approach", text: "Programs, Mentorship & Thought Leadership" },
+  { label: "Mission", text: "Closing the opportunity gap for African talent" },
+  { label: "Focus", text: "Future of Work in Africa" },
+  { label: "Approach", text: "Programs, Mentorship & Thought Leadership" },
 ];
 
 const AboutSection = () => (
