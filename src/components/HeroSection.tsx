@@ -28,7 +28,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">
-              📍 Accra, Ghana
+              Accra, Ghana
             </p>
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
               Nicholas<br />

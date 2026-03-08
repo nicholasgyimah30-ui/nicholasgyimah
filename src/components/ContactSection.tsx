@@ -2,9 +2,9 @@ import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
 
 const contactOptions = [
-  { icon: "📧", label: "Email", value: "nicholasgyimah30@gmail.com", href: "mailto:nicholasgyimah30@gmail.com" },
-  { icon: "💼", label: "LinkedIn", value: "nicholas-gyimah001", href: "https://www.linkedin.com/in/nicholas-gyimah001/" },
-  { icon: "✍️", label: "Newsletter", value: "nicholasgyimah.substack.com", href: "https://nicholasgyimah.substack.com" },
+  { label: "Email", value: "nicholasgyimah30@gmail.com", href: "mailto:nicholasgyimah30@gmail.com" },
+  { label: "LinkedIn", value: "nicholas-gyimah001", href: "https://www.linkedin.com/in/nicholas-gyimah001/" },
+  { label: "Newsletter", value: "nicholasgyimah.substack.com", href: "https://nicholasgyimah.substack.com" },
 ];
 
 const ContactSection = () => (
@@ -23,8 +23,7 @@ const ContactSection = () => (
               rel="noopener noreferrer"
               className="flex flex-col items-center p-5 rounded-xl bg-background border border-border shadow-card hover:shadow-card-hover hover:border-accent/40 transition-all"
             >
-              <span className="text-2xl mb-2">{c.icon}</span>
-              <span className="text-xs font-medium text-muted-foreground">{c.label}</span>
+              <span className="text-xs font-semibold tracking-wider uppercase text-accent mb-1">{c.label}</span>
               <span className="text-sm font-medium text-foreground mt-1 break-all">{c.value}</span>
             </a>
           ))}
