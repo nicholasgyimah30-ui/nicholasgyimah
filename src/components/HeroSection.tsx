@@ -69,8 +69,16 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="#contact"
+                href="https://forms.gle/DzFapsAQsXDwnaUt8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold text-sm shadow-gold hover:opacity-90 transition-opacity"
+              >
+                Register for NSS Ready →
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center px-6 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-secondary transition-colors"
               >
                 Book a Call / Collaborate
               </a>
