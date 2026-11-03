@@ -110,7 +110,7 @@ const NSSReadySection = () => (
       <AnimatedSection>
         <div className="mb-12 md:mb-16">
           <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-3">
-            NSS Ready · Cohort 1 · by InternAfrica
+            NSS Ready · Cohort 1 · by InternAfrica[Test]
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
             From final year to first placement.
